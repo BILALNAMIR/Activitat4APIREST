@@ -12,7 +12,7 @@ router.post("/", async (req, res) => {
 });
 
 // tots els events
-router.get("/ge", async (req, res) => {
+router.get("/list", async (req, res) => {
   const events = await Event.find();
   res.json(events);
 });
